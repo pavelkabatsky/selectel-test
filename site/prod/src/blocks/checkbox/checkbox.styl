@@ -1,0 +1,39 @@
+.check
+    padding-left 30px
+    font-params(14px, 24px, 0.0025em)
+    color c-unchecked
+
+    @media screen and (min-width:768px)
+        font-size 16px
+
+    &__input
+        position absolute
+        width 1px
+        height 1px
+        overflow hidden
+        clip rect(0,0,0,0)
+
+    &__box
+        position absolute
+        margin-top 3px
+        margin-left -30px
+        width 18px
+        height 18px
+        border-radius 50%
+        background-repeat no-repeat
+        background-position center
+        background-color #fff
+        box-shadow 0 0 0 2px c-unchecked
+
+.check__input:checked + .check__box
+    box-shadow 0 0 0 0.13em c-checked
+    
+    background-image url('../image/check.svg')
+
+.check__input:disabled + .check__box
+    box-shadow 0 0 0 0.13em c-dis
+    
+
+.option
+    display block
+    margin-bottom 0.5em

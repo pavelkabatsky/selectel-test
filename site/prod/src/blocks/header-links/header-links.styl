@@ -1,0 +1,47 @@
+.header-links
+    display flex
+
+    &__item
+        display flex
+        align-items center
+        margin-right 16px
+        text-decoration none
+        font-size 0
+
+        @media screen and (min-width:768px)
+            margin-right 36px
+
+        &:last-child 
+            margin-right 0
+
+        svg 
+            width 10px
+            height 10px
+            fill links
+
+            @media screen and (min-width:768px)
+                width 16px
+                height 16px
+            
+    &__text
+        display none
+
+        @media screen and (min-width:1200px)
+            display block
+            font-size 12px
+            line-height 20px
+            margin-left 8px
+            color links
+            
+.header-links__item:hover 
+    .header-links__text 
+        color rgba(131, 145, 178, 0.6)
+    svg
+        fill rgba(131, 145, 178, 0.6)
+
+.header-links__item:active
+    .header-links__text 
+        color title
+    svg
+        fill title
+               

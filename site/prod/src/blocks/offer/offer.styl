@@ -1,0 +1,57 @@
+.offer
+    position relative
+    margin-top 32px
+    margin-bottom 150px
+    
+
+    @media screen and (min-width : 768px) 
+        display flex
+        margin-top 0
+        
+.offer-content
+
+    @media screen and (min-width : 768px) 
+        max-width 412px
+        margin-top 60px
+
+    @media screen and (min-width : 1200px) 
+        max-width 528px
+        margin-top 80px
+
+    &__title
+        margin-bottom 16px
+        
+    &__text
+        font-params(12px,120%,0.0025em)
+        margin-bottom 24px
+
+        @media screen and (min-width : 768px) 
+            font-size 16px
+
+        @media screen and (min-width : 768px) 
+            font-size 18px
+        
+
+.offer-image
+    width 209px
+    height 175px
+    position absolute
+    top 75%
+    left 20%
+    background url('../image/ball-mobile.png') center /contain no-repeat
+
+    @media screen and (min-width : 768px) 
+        width 293px
+        height 247px
+        top auto
+        left auto
+        bottom 0%
+        right 0
+        background url('../image/ball-table.png') center /cover no-repeat
+    
+    @media screen and (min-width : 1200px) 
+        width 380px
+        height 363px
+        top 10%
+        bottom auto
+        background url('../image/ball-desk.png') center /cover no-repeat

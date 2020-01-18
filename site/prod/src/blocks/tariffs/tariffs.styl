@@ -1,0 +1,91 @@
+.tariffs
+    &__title
+        font-params(14px,120%,0,0025em)
+        color: title
+        margin-bottom 16px
+
+        @media screen and (min-width:768px)
+            font-size 18px
+
+.tariffs-cards
+    &__item
+        padding 16px
+        border: 1px solid #8391B2;
+        border-radius: 7px
+        margin-bottom 16px
+
+        @media screen and (min-width:768px)
+            display flex
+            justify-content space-between
+            padding 55px 24px 24px
+
+        &-bottom 
+            @media screen and (min-width:768px)
+                text-align center
+
+        
+        &-price
+            margin-bottom 24px
+            font-params(12px,120%,0.025em,bold)
+            color title
+
+            @media screen and (min-width:768px)
+                max-width 64px
+                margin 0 auto 8px
+                font-size 14px
+
+            @media screen and (min-width:1200px)
+                max-width 128px
+
+        
+        &:last-child
+            margin-bottom 32px
+            @media screen and (min-width:768px)
+                margin-bottom 60px
+            @media screen and (min-width:1200px)
+                margin-bottom 80px
+
+        span 
+            display block
+            font-weight bold
+            margin-bottom 16px
+
+            @media screen and (min-width:768px)
+                position absolute
+                left 0
+                top -36px
+        
+    .no-search-result {
+        padding 48px
+        font-params(16px,120%, 0.0275,bold)
+        text-align center
+    }
+    ul
+        @media screen and (min-width:768px)
+            display flex
+
+        li 
+            margin-bottom 16px
+            color title
+            font-params(12px,120%,0.025em)
+
+            @media screen and (min-width:768px)
+                font-size 14px
+                margin-right 40px
+                margin-bottom 0
+
+                &:last-child
+                    margin-right 0
+
+                &:first-child
+                    position relative
+                    max-width 130px
+                    font-size 16px
+                    margin-right 24px
+
+            @media screen and (min-width:1200px)
+                margin-right 58px
+
+                &:first-child
+                    margin-right 58px
+    

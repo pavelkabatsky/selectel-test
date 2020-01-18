@@ -1,0 +1,101 @@
+.range-selector-wrap  {
+    position:relative;
+}
+.range-selector {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    outline: none;
+    border-radius: 3px;
+}
+.range-selector__value {
+    position: absolute;
+    left :50%;
+    top:25px;
+    transform :translateX(-50%);
+    font-params(12px,120%,0.0275em)
+
+    @media screen and (min-width:768px) {
+        font-size 14px
+    }
+}
+.range-selector {
+    position: relative;
+    &:before {
+        content: '2';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        font-size: 12px;
+        color: links;
+    }
+    &:after {
+        content: '12';
+        position: absolute;
+        right: 0;
+        top: 10px;
+        font-size: 12px;
+        color: links;
+    }
+}
+    
+.range-selector::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+}
+.range-selector::-webkit-slider-thumb:hover {
+    width: 18px;
+    height: 18px;
+}
+
+.range-selector::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+    cursor pointer
+}
+
+.range-selector::-moz-range-thumb: hover {
+    width: 18px;
+    height: 18px;
+}
+
+// ie 
+.range-selector::-ms-thumb {
+  width: 10px;
+  border-radius: 2px;
+  background: title;
+  cursor: pointer;
+  height: 12.6px;
+}
+.range-selector::-ms-fill-lower {
+    background:;
+}
+.range-selector::-ms-fill-lower {
+    background:accent;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .range-selector {
+        height:6px;
+        background:transparent !important;
+    }
+    .range-selector__value {
+        top:40px;
+    }
+}
+// edge
+@supports (-ms-ime-align:auto) {
+    .range-selector {
+       height:6px;
+       background:title;
+   }
+}
+

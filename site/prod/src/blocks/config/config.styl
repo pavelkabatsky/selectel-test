@@ -1,0 +1,66 @@
+.config
+    @media screen and (min-width:768px)
+        display flex
+        flex-wrap wrap
+        padding-bottom 48px
+    &__title
+        margin-bottom 32px
+
+        @media screen and (min-width:768px)
+            flex 1 0 100%
+            margin-bottom 40px
+            text-align center
+
+    
+
+.selector
+    display flex
+    align-items center
+
+    @media screen and (min-width:768px)
+        flex 0 0 50%
+
+    &__title
+        vertical-align middle
+        font-params(12px,120%,0.0025em)
+        color #29435D
+        margin-right 32px
+
+        @media screen and (min-width:768px)
+            font-size 18px
+        
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            margin-top -20px
+        }
+            
+        
+
+.selector .range-selector-wrap
+    flex:1 0 204px
+    margin-top -7px
+
+.checkbox-wrap
+    margin 24px 0 32px
+    
+    @media screen and (min-width:768px)
+        display flex
+        flex-shrink 0
+        padding-left 58px
+        margin 0
+
+.checkbox-item 
+    margin-bottom 20px
+
+    @media screen and (min-width:768px)
+        margin-right 40px
+        margin-bottom 0
+        
+        &:last-child 
+            margin-right 0
+    @media screen and (min-width:1200px)
+        margin-right 86px
+
+.connectError 
+    padding 48px
+    text-align center
+    font-params(14px,120%, 0.0275,bold)
